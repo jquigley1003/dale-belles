@@ -12,9 +12,9 @@ angular.module('daleBellesApp', [
   'ui.bootstrap',
   'validation.match'
 ])
-  .config(function($urlRouterProvider, $locationProvider) {
+  .config(['$urlRouterProvider','$locationProvider', function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
       .otherwise('/');
 
     $locationProvider.html5Mode(true);
-  });
+  }]);

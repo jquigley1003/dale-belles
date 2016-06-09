@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('daleBellesApp')
-  .controller('WhatICareAboutCtrl', function ($scope) {
+  .controller('WhatICareAboutCtrl',['$scope',  function ($scope) {
     $scope.message = 'Hello';
-  });
+  }]);
